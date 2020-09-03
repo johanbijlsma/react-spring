@@ -36,3 +36,47 @@
 		transform: rotate(360deg);
 	}
 }
+
+button {
+	margin: 10px;
+	padding: 0.6rem 1.3rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 1px 1px 8px rgba(0, 0, 0, 0.5),
+		0 0 15px rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+	background-image: linear-gradient(
+		to bottom right,
+		lightblue,
+		62%,
+		darkorange 82%
+	);
+	border: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+	color: white;
+	transition: all 50ms linear;
+}
+
+button:hover,
+button:focus {
+	transform: translate(0, 10px);
+	transition: all 200ms linear;
+	background-image: linear-gradient(
+		to top left,
+		lightblue,
+		62%,
+		darkorange 82%
+	);
+	box-shadow: 0 0 2px rgba(255, 255, 255, 0.3),
+		1px 1px 8px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.15);
+	cursor: pointer;
+}
+
+section[class^='example'] {
+	position: relative;
+	height: fit-content;
+	min-height: 25vh;
+	overflow: hidden;
+	width: 50vmax;
+	transform: scale(0);
+}
