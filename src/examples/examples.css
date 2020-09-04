@@ -41,3 +41,22 @@ body {
 	will-change: transform, opacity;
 	text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
 }
+
+div.card {
+	width: clamp(300px, 50vw, 900px);
+	padding: 1rem;
+	background-color: azure;
+	color: hotpink;
+	border-radius: 10px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.loading-bar {
+	background-image: linear-gradient(to right, white 50%, hotpink 50%);
+	width: 100%;
+	display: block;
+	height: 30px;
+	background-size: 3%;
+	box-shadow: 0px 0px 12px;
+	margin: 10px 0;
+}

@@ -1,4 +1,4 @@
-import './transition.css';
+import './examples.css';
 
 import React, { useCallback, useState } from 'react';
 import { animated, useTransition } from 'react-spring';

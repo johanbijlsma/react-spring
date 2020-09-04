@@ -3,7 +3,8 @@ import './App.css';
 import React, { useState } from 'react';
 import { animated, useSpring } from 'react-spring';
 
-import TransitionExample from './transition';
+import NumberExample from './examples/number-spring';
+import TransitionExample from './examples/transition';
 
 function App() {
 	const colorProps = useSpring({
@@ -11,7 +12,7 @@ function App() {
 		from: { backgroundColor: 'hotpink' },
 	});
 
-	const numberProps = useSpring({ number: 100, from: { number: 0 } });
+	// const numberProps = useSpring({ number: 100, from: { number: 0 } });
 	const scaleProps = useSpring({ height: 200, from: { height: 0 } });
 	const [isToggled, setToggle] = useState(false);
 	const toggleProps = useSpring({
@@ -30,16 +31,16 @@ function App() {
 						alt='logo React Spring'
 						style={scaleProps}
 					/>
-					<p>
+					{/* <p>
 						Fake loader:
 						<br />
 						<animated.span>{numberProps.number}</animated.span>
-					</p>
+					</p> */}
 				</animated.section>
 				<animated.section className='example2' style={toggleProps}>
 					<TransitionExample />
 				</animated.section>
-
+				<NumberExample />
 				<button
 					onClick={() =>
 						setToggle(!isToggled) && console.log('button got clicked')
